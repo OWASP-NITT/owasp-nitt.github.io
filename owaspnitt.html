@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<title> first web page </title>
+	<style>
+		body {background: url(owaspbg2.png) no-repeat center center fixed; 
+  				-webkit-background-size: cover;
+  				-moz-background-size: cover;
+  				-o-background-size: cover;
+  					background-size: cover;
+  				}
+
+
+  		
+  		#navbarr {padding-right: 5%}
+  		
+
+  		#mainpg {height:100vh ; min-height:100%; }
+  		.sm-1 { padding:0; margin:0;height:100%; min-height:100%;} 
+
+  		.jumbotron {background:none;
+					}
+		#allo {color:white; font-family: 'Montserrat', sans-serif;}
+		#im {color:white; font-family: 'Montserrat', sans-serif;;}
+		.ltext {font-family: 'Roboto', sans-serif;}
+		.sm-2 {background:none;}
+
+		.sm-3 {background:none;}
+
+		.sm-4 {background-color:black;}
+
+	
+		.fa-linkedin {
+  			/*background: #007bb5;*/
+  			background:#ffb905;
+  			color: #ffb905;
+		}
+		.col-container {
+		  display: table;
+		  width: 100%;
+		  
+		}
+		.col {
+		  display: table-cell;
+		  padding: 16px;
+		}	
+
+		#subcolz{
+			height:40vh ; 
+			background-color: #f7f7f7;
+		}
+
+		.subcolhead{
+			font-weight:bold;
+			font-size:calc(1em + 1vmin);
+		}
+		.subcoltext{font-size:calc(0.8em + 0.7vmin);
+					padding-top: 5%;
+					opacity: 1;
+					padding-left:10%;
+					padding-right:10%;
+
+						}	
+
+		.subcoltext:hover {
+			font-size:calc(1em + 1vmin);
+			
+		
+		}
+
+		#team{
+			padding-top:5%;
+			padding-left:10%;
+			background-color: #f7f7f7; 
+			color:black;
+		}
+
+		#lposts{
+			padding-top:5%;
+			background-color: #f7f7f7;
+			color:black;
+		}
+
+		#upc{
+			padding-top:5%;
+			padding-right:10%;
+			background-color: #f7f7f7; 
+			color:black;
+		}
+
+				a {
+    color: black;
+}
+				a:hover{
+    color: black;
+}
+
+
+
+
+		@media screen and (max-width:750px){
+
+			.ltext{ padding: 2% 5% 2% 5%; }
+			#subcolz{height:100vh;}
+			.subcolhead{color:#20C20E;}
+			.subcoltext{color: white;}
+			#team{  background-color: #333; height:25vh; padding: 5% 0% 0% 0%; }
+			#lposts{  background-color: #222; height:30vh; }
+			#lposts .subcoltext{ padding-top: 5%; }
+			#upc{ background-color: #333;  height: 25vh; padding-left:0%; padding-right: 0%;}
+			#allo{text-align: center;}
+			a { color: white;}
+							a:visited{
+    color: white;
+}
+
+		}
+
+  	
+
+    </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarr">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      			</button>
+    		</div>
+    		<div class="collapse navbar-collapse" id="navbarr">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" style="color:#00ff00;">Home</a></li>
+					<li><a href="index.html" style="color:#00ff00;">Members</a></li>
+					<li><a href="#contact" style="color:#00ff00;">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- calc(28px + (40 - 28) * ((100vw - 350px) / (1600 - 300)));  28, 18, 20-->  
+	<div class="container-fluid sm-1"> 
+		<div id="mainpg" class="container-full-bg">
+			<div class="jumbotron text-center" style="height:100%; background-size:cover">
+				<br>
+				<div class="container">
+					<br><br><br><br><br><br><br>
+					<b><p id="allo" style="font-size:calc(28px + (45 - 28) * ((100vw - 350px) / (1600 - 300))); color:#00ff00; font-weight:bold;"></p></b> <!-- 38,23,36 -->
+					<br>
+					<p id="im" style="font-size:calc(18px + (25 - 18) * ((100vw - 350px) / (1600 - 300))); color:#ffffff"></p>
+					<br><br><br>
+					<a href="https://github.com/OWASP-NITT/" class="fa fa-github" style="font-size:30px; color:#ffffff; padding-right:10px;"></a>
+					<a href="https://github.com/RajTG" class="fa fa-facebook" style="font-size:30px; color:#ffffff"></a>
+
+					<p class="p2"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var hello="OWASP-NITT";
+		var imm="Scan Exploit Pwn"
+		function changeText(hell,imm,cont2,cont3,speed){
+			//var Otext=cont1.text();
+			var Ocontent=hell.split("");
+			var Ocontent1=imm.split("");
+			var i=0;
+			var j=0;
+			function show(){
+				if(i<Ocontent.length)
+				{		
+					cont2.append(Ocontent[i]);
+					i=i+1;
+				};
+				if(i==Ocontent.length)
+				{
+
+
+				if(j<Ocontent1.length)
+				{
+					cont3.append(Ocontent1[j]);
+					j=j+1;
+				}
+			}
+			};
+				var Otimer=setInterval(show,speed);	
+		};
+		$(document).ready(function(){
+			changeText(hello,imm,$("p#allo"),$("p#im"),120); //  150 = the Delay time in milliseconds between strokes.
+
+			//changeText(imm,$("p#im"),100);
+			clearInterval(Otimer);
+		});
+	</script>
+
+	<!-- <script> 
+			$(function(){  // $(document).ready shorthand
+  			$('.col-sm-4').fadeIn('slow');
+			});
+
+			setTimeout(function(){ $(document).ready(function() {
+    
+			    /* Every time the window is scrolled ... */
+			    $(window).scroll( function(){
+    
+			        /* Check the location of each desired element */
+			        $('.subcoltext').each( function(i){
+            
+			            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+			            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+			            /* If the object is completely visible in the window, fade it it */
+			            if( bottom_of_window > bottom_of_object ){
+                
+			                $(this).animate({'opacity':'1'},2500);
+                    
+			            }
+            
+			        }); 
+    
+			    });
+    
+			}); }, 2000);
+	</script> -->
+
+
+
+	<div class="container-fluid text-center">
+		<div id="about" class="row" >
+			<div class="col-sm-2"> </div>
+			<div class="col-sm-8" style="color:black;padding-top:2%; padding-bottom:1%;background-color:#f7f7f7;">
+				<p class="ltext" style="font-size:calc(1.5em + 1.5vmin);">About</p>
+
+			</div>
+			<!--<div class="col-sm-8" >
+				 <p id="aboutpara" style="background-color:#ffffff" >  </p>
+			</div>  -->
+		</div> 
+	</div>
+	<div class="container-fluid text-center">
+		<div id="skills" class="row" style="background-color: #333;">
+			<!--<div class="col-sm-4" style="color:black;padding-top:3%; padding-bottom:3%;background-color:#ffffff"><h2 class="ltext" style="font-size:calc(1.75em + 2vmin);">Skills</h2></div> -->
+			<div class="col-sm-2" style="background-color:#333;"></div>
+			<div class="col-sm-8" style="color:black;padding-top:1%; padding-bottom:1%;padding-left:5%;padding-right:5%; background-color:#f7f7f7;"> 
+				<p class="ltext" style="font-size:calc(0.8em + 0.7vmin);">Open Web Application Security Project(OWASP) is an international not-for-profit organization focused on improving the security of application software. Its mission is to make security aspects of software more visible in
+				various ways including the production of extensive documentation of vulnerabilities, tools and technologies. In doing so, it aims to educate people about risks associated with commonly used web applications.
+				</p>
+			</div>
+			
+
+	
+		</div>
+
+	</div>
+
+	<div id="subcolz" class="container-fluid text-center" style=" ">
+		<div class="col-container">
+			  <div id="team" class="col-sm-4">
+			    <p class="subcolhead" style=" ">Meet the team</p>
+			    <p class="subcoltext"><a href="index.html">Want to know us more? Click here! </a></p>
+			  </div>
+			
+			  <div id="lposts" class="col-sm-4">
+			    <p class="subcolhead" style=" ">Latest Posts</p>
+			    <p class="subcoltext"><a href="#">Zero Day</a></p>
+			    <p class="subcoltext"><a href="#">Certifications</p>
+			  </div>
+			
+			  <div id="upc" class="col-sm-4">
+			    <p class="subcolhead" style=" ">Events</p>
+			    <p class="subcoltext">Coming Soon</p>
+			  
+			    
+			  </div>
+			</div>
+	
+		</div>
+	</div> 
+
+	<!-- <div class="container-fluid sm-4 text-center">
+		<div id="contact" class="row">
+			<div class="contactz" style="padding-top:2%; padding-bottom:2%;background-color:black"><h2 class="ltext" style="color:white; font-size:300%;color:white;">Contact</h2>
+			</div>
+			<div class="contactinfo" style="padding-bottom:3%;">
+				
+				<a href="https://linkedin.com/in/raj-sureja-748a81137" class="fa fa-linkedin-square" style="font-size:36px; color:#ffb905; padding-right:10px;"></a>
+				<a href="https://github.com/RajTG" class="fa fa-github" style="font-size:36px; color:#ffb905"></a>
+				<p id="contactpara">owaspnitt@gmail.com</p>
+			</div>
+		</div>
+	</div> -->
+
+</body>

@@ -17,6 +17,7 @@
   				-moz-background-size: cover;
   				-o-background-size: cover;
   					background-size: cover;
+  			background-color: black;
   				}
 
 
@@ -97,6 +98,15 @@
 			color:black;
 		}
 
+		.cb {
+			background-color:#222;
+		}
+
+		#infopara {
+			  text-align: justify;
+  			  text-justify: inter-word;
+		}
+
 				a {
     color: black;
 }
@@ -113,11 +123,15 @@
 			#subcolz{height:100vh;}
 			.subcolhead{color:#20C20E;}
 			.subcoltext{color: white;}
-			#team{  background-color: #333; height:25vh; padding: 5% 0% 0% 0%; }
-			#lposts{  background-color: #222; height:30vh; }
+			#team{  background-color: #333; height:30vh; padding: 5% 0% 0% 0%; }
+			#lposts{  background-color: #222; height:35vh; }
 			#lposts .subcoltext{ padding-top: 5%; }
 			#upc{ background-color: #333;  height: 35vh; padding-left:0%; padding-right: 0%;}
 			#allo{text-align: center;}
+
+			body {
+				background: url('mobg.jpg');
+			}
 			a { color: white;}
 							a:visited{
     color: white;
@@ -242,17 +256,15 @@
 				<p class="ltext" style="font-size:calc(1.5em + 1.5vmin);">About</p>
 
 			</div>
-			<!--<div class="col-sm-8" >
-				 <p id="aboutpara" style="background-color:#ffffff" >  </p>
-			</div>  -->
+			
 		</div> 
 	</div>
 	<div class="container-fluid text-center">
 		<div id="skills" class="row" style="background-color: #333;">
-			<!--<div class="col-sm-4" style="color:black;padding-top:3%; padding-bottom:3%;background-color:#ffffff"><h2 class="ltext" style="font-size:calc(1.75em + 2vmin);">Skills</h2></div> -->
+			
 			<div class="col-sm-2" style="background-color:#333;"></div>
 			<div class="col-sm-8" style="color:black;padding-top:1%; padding-bottom:1%;padding-left:5%;padding-right:5%; background-color:#f7f7f7;"> 
-				<p class="ltext" style="font-size:calc(0.8em + 0.7vmin);">Open Web Application Security Project(OWASP) is an international not-for-profit organization focused on improving the security of application software. Its mission is to make security aspects of software more visible in various ways including the production of extensive documentation of vulnerabilities, tools and technologies. In doing so, it aims to educate people about risks associated with commonly used web applications. Our Local Chapter Meetings are free and open to anyone to attend so both members and non-members are always welcomed.
+				<p class="ltext" id="infopara" style="font-size:calc(1em + 0.7vmin);">Open Web Application Security Project(OWASP) is an international not-for-profit organization focused on improving the security of application software. Its mission is to make security aspects of software more visible in various ways including the production of extensive documentation of vulnerabilities, tools and technologies. In doing so, it aims to educate people about risks associated with commonly used web applications. Our Local Chapter Meetings are free and open to anyone to attend so both members and non-members are always welcomed.
 				</p>
 			</div>
 			
@@ -266,18 +278,18 @@
 		<div class="col-container">
 			  <div id="team" class="col-sm-4">
 			    <p class="subcolhead" style=" ">Meet the team</p>
-			    <p class="subcoltext"><a href="owaspnitt.html">Want to know us more? Click here! </a></p>
+			    <button class="button cb"><p class="subcoltext"><a style="color:#f7f7f7;" href="owaspnitt.html">Want to know us more?</a></p></button>
 			  </div>
 			
 			  <div id="lposts" class="col-sm-4">
 			    <p class="subcolhead" style=" ">Latest Posts</p>
-			    <p class="subcoltext"><a href="https://medium.com/@owasp.nitt2020/zero-day-1c988bfdd70c">Zero Day</a></p>
+			    <button class="button cb"><p class="subcoltext"><a style="color:#f7f7f7;" href="https://medium.com/@owasp.nitt2020/zero-day-1c988bfdd70c">Zero Day</a></p></button>
 			  
 			  </div>
 			
 			  <div id="upc" class="col-sm-4">
 			    <p class="subcolhead" style=" ">Upcoming</p>
-			    <p class="subcoltext">Lateral Inductions</p>
+			    <button class="button cb"><p style="color:#f7f7f7;" class="subcoltext">Lateral Inductions</p></button>
 			  
 			    
 			  </div>
@@ -285,18 +297,5 @@
 	
 		</div>
 	</div> 
-
-	<!-- <div class="container-fluid sm-4 text-center">
-		<div id="contact" class="row">
-			<div class="contactz" style="padding-top:2%; padding-bottom:2%;background-color:black"><h2 class="ltext" style="color:white; font-size:300%;color:white;">Contact</h2>
-			</div>
-			<div class="contactinfo" style="padding-bottom:3%;">
-				
-				<a href="https://linkedin.com/in/raj-sureja-748a81137" class="fa fa-linkedin-square" style="font-size:36px; color:#ffb905; padding-right:10px;"></a>
-				<a href="https://github.com/RajTG" class="fa fa-github" style="font-size:36px; color:#ffb905"></a>
-				<p id="contactpara">owaspnitt@gmail.com</p>
-			</div>
-		</div>
-	</div> -->
 
 </body>

@@ -1,304 +1,512 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Meta tags & title /-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="robots" content="all,index,follow" />
+
+	<title>Meet the team</title>
+	
+	<!-- Stylesheets /-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Open Sans /-->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'> <!-- PT Sans Narrow /-->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> <!-- Favicon /-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<title> first web page </title>
+
+
+
+
 	<style>
-		body {background: url(owaspbg2.png) no-repeat center center fixed; 
-  				-webkit-background-size: cover;
-  				-moz-background-size: cover;
-  				-o-background-size: cover;
-  					background-size: cover;
-  				}
 
 
-  		
-  		#navbarr {padding-right: 5%}
-  		
+* {margin: 0; padding: 0;}
 
-  		#mainpg {height:100vh ; min-height:100%; }
-  		.sm-1 { padding:0; margin:0;height:100%; min-height:100%;} 
+.p {line-height: 160%;}
 
-  		.jumbotron {background:none;
-					}
-		#allo {color:white; font-family: 'Montserrat', sans-serif;}
-		#im {color:white; font-family: 'Montserrat', sans-serif;;}
-		.ltext {font-family: 'Roboto', sans-serif;}
-		.sm-2 {background:none;}
+a {text-decoration: none; color: #fff; transition: all 0.1s ease-in;}
+img {border: 0;}
 
-		.sm-3 {background:none;}
+body {
+	background: #fff;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+}
 
-		.sm-4 {background-color:black;}
+.clear {clear: both;}
 
+/* Buttons */
+
+#navbar-top {padding-right: 5%}
+
+.btn {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 40px;
+	color: rgba(255,255,255, 0.95);
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 20px;
+	outline: 0;
+	transition: all 0.1s ease-in;
+}
+
+.btn-transparent {background: rgba(0,0,0, 0.2);}
+.btn-transparent:hover {background: rgba(0,0,0, 0.4);}
+
+/* Separators */
+.separator {
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.2);
+	width: 30px;
+	height: 5px;
+}
+
+/* 02. FONT FACE ============================================ 
+
+@font-face {
+    font-family: 'norwester';
+	src: url('../fonts/norwester/norwester.eot');
+    src: url('../fonts/norwester/norwester.eot?iefix') format('embedded-opentype'),
+		 url('../fonts/norwester/norwester.ttf');
+    font-weight: normal; 
+} */
+
+/* 03. TEAM SETTINGS ============================================ */
+
+#speakers {
+	padding: 60px 0;
+	background: #222;
+	text-align: center;	
+}
+
+#speakers p {
+	padding: 20px 0 60px;
+	color:#20C20E;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+}
+
+#speakers h3 {
+	padding: 0 0 15px;
+	font-family: 'Raleway';
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#speakers h4  {
+	margin-top: -20px;
+	font-size: 25px;
+	font-weight: 500;
+	color:#20C20E;
+}
+
+#speakers h4 span {
+	display: block;
+	position: relative;
+	left: -40px;
+	top: 10px;
+	font-size: 20px;
+	background: none;
+	padding: 2;
+	color:#20C20E;
+}
+
+#speakers img {
+	width: 100%;
+	max-width: 240px;
+	border-radius: 50%; 
+	border: 15px solid transparent; 
+	box-shadow: 2px 2px 0px rgba(0,0,0, 0.18);
+	transition: all 0.1s ease-in;
+}
 	
-		.fa-linkedin {
-  			/*background: #007bb5;*/
-  			background:#ffb905;
-  			color: #ffb905;
-		}
-		.col-container {
-		  display: table;
-		  width: 100%;
-		  
-		}
-		.col {
-		  display: table-cell;
-		  padding: 16px;
-		}	
-
-		#subcolz{
-			height:40vh ; 
-			background-color: #f7f7f7;
-		}
-
-		.subcolhead{
-			font-weight:bold;
-			font-size:calc(1em + 1vmin);
-		}
-		.subcoltext{font-size:calc(0.8em + 0.7vmin);
-					padding-top: 5%;
-					opacity: 1;
-					padding-left:10%;
-					padding-right:10%;
-
-						}	
-
-		.subcoltext:hover {
-			font-size:calc(1em + 1vmin);
-			
-		
-		}
-
-		#team{
-			padding-top:5%;
-			padding-left:10%;
-			background-color: #f7f7f7; 
-			color:black;
-		}
-
-		#lposts{
-			padding-top:5%;
-			background-color: #f7f7f7;
-			color:black;
-		}
-
-		#upc{
-			padding-top:5%;
-			padding-right:10%;
-			background-color: #f7f7f7; 
-			color:black;
-		}
-
-				a {
-    color: black;
+#speakers img:hover {
+	border: 15px solid #20C20E;
+	position: relative;
+	z-index: 10;
+	transition: all 0.1s ease-in;	
 }
-				a:hover{
-    color: black;
+
+#speakers span {
+	padding: 8px 20px;
+	position: relative;
+	top: -64px;
+	left: -42px;
+	display: inline-block;
+	background: #111;
+	border-radius: 0 16px 16px 0;
+	font-size: 16px;
+	}
+
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.member-profile:hover .unhover_img{
+  display: none;
+}
+
+.member-profile:hover .hover_img {
+  display: block;
+}
+
+/* Social Networks Meta */
+#speakers li {display: inline-block; padding: 0 6px; font-size: 18px;}
+#speakers li a {color: rgba(0,0,0, 0.3); transition: all 0.1s ease-in;}
+#speakers li a:hover {color: rgba(0,0,0, 0.7);}
+
+/* Rows Optimization */
+.row3 {
+	display: none;
+} 
+.row4 {
+	display: none;
+} 
+
+.row1 .col-md-4, .row2 .col-md-4, .row3 .col-md-4, .row4 .col-md-4{
+	padding-bottom: 40px;
+}
+
+/* Mobile Devices Optimization */
+@media (min-width: 568px) and (max-width: 992px) {
+
+	.row1 .col-md-4, .row2 .col-md-4, .row3 .col-md-4, .row4 .col-md-4{
+		display: inline-block;
+		max-width: 50%;
+	}
+
+	#speakers img {max-width: 300px;}
+
 }
 
 
+</style>
 
-
-		@media screen and (max-width:750px){
-
-			.ltext{ padding: 2% 5% 2% 5%; }
-			#subcolz{height:100vh;}
-			.subcolhead{color:#20C20E;}
-			.subcoltext{color: white;}
-			#team{  background-color: #333; height:25vh; padding: 5% 0% 0% 0%; }
-			#lposts{  background-color: #222; height:30vh; }
-			#lposts .subcoltext{ padding-top: 5%; }
-			#upc{ background-color: #333;  height: 25vh; padding-left:0%; padding-right: 0%;}
-			#allo{text-align: center;}
-			a { color: white;}
-							a:visited{
-    color: white;
-}
-
-		}
-
-  	
-
-    </style>
 </head>
+
 <body>
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="container-fluid">
 			<div class="navbar-header">
-      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarr">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>                        
       			</button>
     		</div>
-    		<div class="collapse navbar-collapse" id="navbarr">
+    		<div class="collapse navbar-collapse" id="navbar-top">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" style="color:#00ff00;">Home</a></li>
-					<li><a href="index.html" style="color:#00ff00;">Members</a></li>
-					<li><a href="#contact" style="color:#00ff00;">Contact</a></li>
+					<li><a href="index.html" style="color:#00ff00;">Home</a></li>
+					<li><a href="https://owasp.org/" style="color:#00ff00;">OWASP</a></li>
+					<li><a href="https://www.meetup.com/OWASP-NIT-Tiruchirappalli-Student-Chapter/" style="color:#00ff00;">Meetings</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- calc(28px + (40 - 28) * ((100vw - 350px) / (1600 - 300)));  28, 18, 20-->  
-	<div class="container-fluid sm-1"> 
-		<div id="mainpg" class="container-full-bg">
-			<div class="jumbotron text-center" style="height:100%; background-size:cover">
-				<br>
-				<div class="container">
-					<br><br><br><br><br><br><br>
-					<b><p id="allo" style="font-size:calc(28px + (45 - 28) * ((100vw - 350px) / (1600 - 300))); color:#00ff00; font-weight:bold;"></p></b> <!-- 38,23,36 -->
-					<br>
-					<p id="im" style="font-size:calc(18px + (25 - 18) * ((100vw - 350px) / (1600 - 300))); color:#ffffff"></p>
-					<br><br><br>
-					<a href="https://github.com/OWASP-NITT/" class="fa fa-github" style="font-size:30px; color:#ffffff; padding-right:10px;"></a>
-					<a href="https://github.com/RajTG" class="fa fa-facebook" style="font-size:30px; color:#ffffff"></a>
+	<!-- SPEAKERS SECTION -->	
 
-					<p class="p2"></p>
+
+	<section id="speakers">
+
+		<h3 style="color:#20C20E;">The Team</h3> <!-- Section Title -->
+		<div class="separator"></div>
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2">
+				<!-- Section Description -->
+				
+			</div>
+			<br><br>
+			<!-- First Row of Speakers -->
+			<div class="row1">
+			
+				<!-- Speaker 1 -->
+				<div class="col-md-4">
+					<a href="https://www.linkedin.com/in/rajs/" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/raj.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/raj1.png" alt="" />
+						</div>
+						<!-- <span>Founder</span> -->
+						<h4><br><span>Raj</span>President</h4>
+					</a>	
+	
+				</div>
+				
+				<!-- Speaker 2 -->
+				<div class="col-md-4">
+					<a href="https://www.linkedin.com/in/thejassathish/" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/thejas.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/thejas1.png" alt="" />
+						</div>
+						<!-- <span>Head-Projects</span> -->
+						<h4><br><span>Thejas</span>Treasurer</h4>
+					</a>	
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- Speaker 3 -->
+				<div class="col-md-4">
+					<a href="https://www.linkedin.com/in/deebthik/" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/deebthik.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/deebthik1.png" alt="" />
+						</div>
+						<!-- <span>Head-CTFs</span>-->
+						<h4><br><span>Deebthik</span>Head-CTFs</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
+				</div>
+				
+				<!-- Speaker 4 -->
+				<!--<div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-4.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-4-hover.png" alt="" />
+						</div>
+						<span>Co-Founder</span>
+						<h4><span>VP-Projects</span>Pranav</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+					</ul>						
+				</div> -->
+				
+			</div> <!-- End First Row -->
+			<div class="clear"></div>
+			
+			<!-- Second Row of Speakers -->
+			<div class="row2">
+			
+				<!-- Speaker 5 -->
+				<div class="col-md-4">
+					<a href="https://www.linkedin.com/in/anshuman-agrawal42/" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/anshuman.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/anshuman1.png" alt="" />
+						</div>
+						<!-- <span>Head-Workshops</span>-->
+						<h4><br><span>Anshuman</span>Head-Workshops</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>						
+					</ul>
+				</div>
+				
+				<!-- Speaker 6 -->	
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/pranav.jpg" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/pranav1.png" alt="" />
+						</div>
+						<!-- <span>Head-Projects</span>-->
+						<h4><br><span>Pranav</span>Head-Projects</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- Speaker 7 -->
+				<!-- <div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-1.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-1-hover.png" alt="" />
+						</div>
+						<span>Photographer</span>
+						<h4><span>Jessica</span> Wallace</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
+				</div> -->
+				
+				<!-- Speaker 8 -->
+				<!-- <div class="col-md-3">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-2.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-2-hover.png" alt="" />
+						</div>
+						<span>SEO Expert</span>
+						<h4><span>Kathy</span> Watkins</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div> -->
+				
+			</div>	<!-- End Second Row -->	
+
+			<div class="row3">
+			
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-1.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-1-hover.png" alt="" />
+						</div>
+						<span>Founder</span>
+						<h4><span>President</span>Raj</h4>
+					</a>	
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-foursquare"></i></a></li>						
+					</ul>
+				</div>
+				
+				<!-- Speaker 2 -->
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-2.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-2-hover.png" alt="" />
+						</div>
+						<span>Co-Founder</span>
+						<h4><span>VP-Education</span>Anshuman</h4>
+					</a>	
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- Speaker 3 -->
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-3.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-3-hover.png" alt="" />
+						</div>
+						<span>Co-Founder</span>
+						<h4><span>Treasurer</span>Thejas</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-3.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-3-hover.png" alt="" />
+						</div>
+						<span>Co-Founder</span>
+						<h4><span>Treasurer</span>Thejas</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
+				</div>
+
+				<div class="col-md-4">
+					<a href="#" class="member-profile">
+						<div class="unhover_img">
+						<img src="img/speaker-3.png" alt="" />
+						</div>
+						<div class="hover_img">
+						<img src="img/speaker-3-hover.png" alt="" />
+						</div>
+						<span>Co-Founder</span>
+						<h4><span>Treasurer</span>Thejas</h4>
+					</a>					
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>						
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>						
+					</ul>					
 				</div>
 			</div>
+			<div class="clear"></div>			
+			<!-- View All Button 
+			<div class="col-md-12">
+				<button class="btn btn-transparent fadeIn">View All</button>
+			</div>	-->
+					
 		</div>
-	</div>
-	<script type="text/javascript">
-		var hello="OWASP-NITT";
-		var imm="Scan Exploit Pwn"
-		function changeText(hell,imm,cont2,cont3,speed){
-			//var Otext=cont1.text();
-			var Ocontent=hell.split("");
-			var Ocontent1=imm.split("");
-			var i=0;
-			var j=0;
-			function show(){
-				if(i<Ocontent.length)
-				{		
-					cont2.append(Ocontent[i]);
-					i=i+1;
-				};
-				if(i==Ocontent.length)
-				{
+	</section>
+	<!-- //SPEAKERS SECTION -->	
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- Load jQuery -->
 
-				if(j<Ocontent1.length)
-				{
-					cont3.append(Ocontent1[j]);
-					j=j+1;
-				}
-			}
-			};
-				var Otimer=setInterval(show,speed);	
-		};
+	<!-- jQuery Code for the View All Button -->
+	<script>
 		$(document).ready(function(){
-			changeText(hello,imm,$("p#allo"),$("p#im"),120); //  150 = the Delay time in milliseconds between strokes.
-
-			//changeText(imm,$("p#im"),100);
-			clearInterval(Otimer);
+		  $(".fadeIn").click(function(){
+			$("div.row3").fadeIn();
+			$("div.row4").fadeIn();
+			$("button.fadeIn").hide();
+		  });
 		});
 	</script>
-
-	<!-- <script> 
-			$(function(){  // $(document).ready shorthand
-  			$('.col-sm-4').fadeIn('slow');
-			});
-
-			setTimeout(function(){ $(document).ready(function() {
-    
-			    /* Every time the window is scrolled ... */
-			    $(window).scroll( function(){
-    
-			        /* Check the location of each desired element */
-			        $('.subcoltext').each( function(i){
-            
-			            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-			            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-			            /* If the object is completely visible in the window, fade it it */
-			            if( bottom_of_window > bottom_of_object ){
-                
-			                $(this).animate({'opacity':'1'},2500);
-                    
-			            }
-            
-			        }); 
-    
-			    });
-    
-			}); }, 2000);
-	</script> -->
-
-
-
-	<div class="container-fluid text-center">
-		<div id="about" class="row" >
-			<div class="col-sm-2"> </div>
-			<div class="col-sm-8" style="color:black;padding-top:2%; padding-bottom:1%;background-color:#f7f7f7;">
-				<p class="ltext" style="font-size:calc(1.5em + 1.5vmin);">About</p>
-
-			</div>
-			<!--<div class="col-sm-8" >
-				 <p id="aboutpara" style="background-color:#ffffff" >  </p>
-			</div>  -->
-		</div> 
-	</div>
-	<div class="container-fluid text-center">
-		<div id="skills" class="row" style="background-color: #333;">
-			<!--<div class="col-sm-4" style="color:black;padding-top:3%; padding-bottom:3%;background-color:#ffffff"><h2 class="ltext" style="font-size:calc(1.75em + 2vmin);">Skills</h2></div> -->
-			<div class="col-sm-2" style="background-color:#333;"></div>
-			<div class="col-sm-8" style="color:black;padding-top:1%; padding-bottom:1%;padding-left:5%;padding-right:5%; background-color:#f7f7f7;"> 
-				<p class="ltext" style="font-size:calc(0.8em + 0.7vmin);">Open Web Application Security Project(OWASP) is an international not-for-profit organization focused on improving the security of application software. Its mission is to make security aspects of software more visible in
-				various ways including the production of extensive documentation of vulnerabilities, tools and technologies. In doing so, it aims to educate people about risks associated with commonly used web applications.
-				</p>
-			</div>
-			
-
 	
-		</div>
-
-	</div>
-
-	<div id="subcolz" class="container-fluid text-center" style=" ">
-		<div class="col-container">
-			  <div id="team" class="col-sm-4">
-			    <p class="subcolhead" style=" ">Meet the team</p>
-			    <p class="subcoltext"><a href="index.html">Want to know us more? Click here! </a></p>
-			  </div>
-			
-			  <div id="lposts" class="col-sm-4">
-			    <p class="subcolhead" style=" ">Latest Posts</p>
-			    <p class="subcoltext"><a href="#">Zero Day</a></p>
-			    <p class="subcoltext"><a href="#">Certifications</p>
-			  </div>
-			
-			  <div id="upc" class="col-sm-4">
-			    <p class="subcolhead" style=" ">Events</p>
-			    <p class="subcoltext">Coming Soon</p>
-			  
-			    
-			  </div>
-			</div>
-	
-		</div>
-	</div> 
-
-	<!-- <div class="container-fluid sm-4 text-center">
-		<div id="contact" class="row">
-			<div class="contactz" style="padding-top:2%; padding-bottom:2%;background-color:black"><h2 class="ltext" style="color:white; font-size:300%;color:white;">Contact</h2>
-			</div>
-			<div class="contactinfo" style="padding-bottom:3%;">
-				
-				<a href="https://linkedin.com/in/raj-sureja-748a81137" class="fa fa-linkedin-square" style="font-size:36px; color:#ffb905; padding-right:10px;"></a>
-				<a href="https://github.com/RajTG" class="fa fa-github" style="font-size:36px; color:#ffb905"></a>
-				<p id="contactpara">owaspnitt@gmail.com</p>
-			</div>
-		</div>
-	</div> -->
-
 </body>
+</html>	

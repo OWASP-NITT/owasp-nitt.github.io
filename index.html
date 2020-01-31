@@ -289,7 +289,7 @@
 			
 			  <div id="upc" class="col-sm-4">
 			    <p class="subcolhead" style=" ">Upcoming</p>
-			    <button class="button cb"><p style="color:#f7f7f7;" class="subcoltext">Lateral Inductions</p></button>
+			    <button class="button cb" onClick="latinduct()"><p id="latind" style="color:#f7f7f7;" class="subcoltext">Lateral Inductions</p></button>
 			  
 			    
 			  </div>
@@ -297,5 +297,11 @@
 	
 		</div>
 	</div> 
+
+	<script>
+	function latinduct() {
+  	document.getElementById("latind").innerHTML = "Coming Soon";
+}
+</script>
 
 </body>
